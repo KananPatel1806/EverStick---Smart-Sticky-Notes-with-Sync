@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Sticky Notes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5 p-4 bg-light shadow rounded">
+        <h1 class="text-center text-primary fw-bold">
+            <i class="bi bi-pin-angle-fill text-danger"></i> Advanced Sticky Notes
+        </h1>
+        
+        <!-- Search Bar -->
+        <div class="input-group my-3 w-50 mx-auto">
+           
+            <input type="text" id="search-bar" class="form-control" placeholder="Search notes...">
+        </div>
+        
+        <!-- Controls -->
+        <div class="d-flex justify-content-center gap-3 mb-4">
+            <button id="add-note" class="btn btn-primary">➕ Add Note</button>
+            <button id="toggle-dark-mode" class="btn btn-dark">🌙 Dark Mode</button>
+        </div>
+        
+        <!-- Reminder & Actions -->
+        <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+                <div class="card p-3 shadow-sm border-0">
+                    <h5 class="fw-bold text-primary mb-3">🎙️ Voice Input</h5>
+                    <textarea id="voice-note" class="form-control" rows="3" placeholder="Speak to add notes..."></textarea>
+                    <button id="start-voice" class="btn btn-danger mt-3 w-100">🎤 Start Voice Input</button>
+                </div>
+            </div>
+        </div>
+        
+
+       
+
+        <!-- Notes Display -->
+        <div id="notes-container" class="row mt-4 g-3 justify-content-center">
+            <!-- Notes will be dynamically added here -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
